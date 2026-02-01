@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
 import { fetchPopularMovies } from "./api";
 import PopularMovies from "./Components/PopularMovies";
+import Navbar from "./Components/Navbar";
 import "./App.css";
 
 function App() {
   return (
   <div className="App">
-      <h1>Popular Movies</h1>
-      <PopularMovies />
+    <Navbar />
+    <PopularMovies />
     </div>
   );
 }
