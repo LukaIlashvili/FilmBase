@@ -13,7 +13,7 @@ function PopularMovies() {
         <>
         
         <div id="popularDiv">
-            <h1 className="popularTitle">Popular Movies</h1>
+            <h1 className="popularTitle">Popular Movies🍿</h1>
             <div id="movies">
         {movies.map(movie => (
             <MovieCard key={movie.id} movie={movie} />
