@@ -91,30 +91,50 @@ nav {
     background-position: center;
     height: 400px;
     position: relative;
-    transition: .2s;
+    transition: .5s;
 }
 
 .heroOverlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.8),
-    rgba(0, 0, 0, 0.2)
-  );
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   padding: 40px;
 }
 
 .heroOverlay h1 {
   font-size: 2.5rem;
   margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: bottom;
 }
 
 .heroOverlay p {
   max-width: 600px;
   line-height: 1.4;
   color: #ddd;
+}
+
+.arrow {
+  position: absolute;
+  top: 90%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  font-size: 3rem;
+  padding: 4px 12px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.arrow.left {
+  left: 20px;
+}
+
+.arrow.right {
+  right: 20px;
+}
+
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.85);
 }
