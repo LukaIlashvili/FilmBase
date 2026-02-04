@@ -109,6 +109,7 @@ nav {
     text-align: center;
     text-shadow: black 0.1em 0.1em 0.2em;
     transition: .2s;
+    color: white;
 }
 
 .heroOverlay p {

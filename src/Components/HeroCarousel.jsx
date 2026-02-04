@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { fetchPopularMovies } from "../api";
 import "../App.css";
+import { Link } from "react-router-dom";
 
 
 
@@ -53,7 +54,9 @@ function HeroCarousel() {
     return (
         <div className="hero" style={{backgroundImage: `url(https://image.tmdb.org/t/p/original${movie.backdrop_path})`}}>
             <div className="heroOverlay">
+                <Link to={`/movie/${movie.id}`} style={{textDecoration: "none"}}>
                 <h1>{movie.title}</h1>
+                </Link>
                 <p>Rating: {movie.vote_average}</p>
                 <button className="arrow left" onClick={prevSlide}>←</button>
                 <button className="arrow right" onClick={nextSlide}>→</button>

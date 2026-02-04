@@ -1,16 +1,16 @@
-import { useEffect, useState } from "react";
-import { fetchPopularMovies } from "./api";
-import PopularMovies from "./Components/PopularMovies";
-import Navbar from "./Components/Navbar";
-import HeroCarousel from "./Components/HeroCarousel";
+import React from "react";
+import MovieDetails from "./pages/MovieDetails";
+import { Routes, Route } from "react-router-dom";
+import Home from "./Components/Home";
 import "./App.css";
 
 function App() {
   return (
   <div className="App">
-    <Navbar />
-    <HeroCarousel />
-    <PopularMovies />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/movie/:id" element={<MovieDetails />} />
+    </Routes>
     </div>
   );
 }
