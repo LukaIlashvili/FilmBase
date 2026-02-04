@@ -37,8 +37,9 @@ nav {
 #movies {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 16px;
-    width: 90%;
+    width: fit-content;
     margin: 20px auto;
     background-color: rgb(230, 129, 35);
     padding: 15px;
